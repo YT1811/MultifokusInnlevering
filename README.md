@@ -24,10 +24,16 @@
 - Kortene er på lik størrelse og er sentrert som nevnt i oppgaven. Kortene roterer også langs y-aksen og skaper en 3D flippeffekt ved hjelp av CSS.
 ---
 ## Oppgave 3: Football Manager
-Først vil jeg si at jeg har tatt utgangspunkt og fått endel hjelp med denne oppgaven ved å bruke github linken som ble refferert til i oppgave pdf-filen.
+Først vil jeg si at jeg har tatt utgangspunkt og fått hjelp med denne oppgaven ved å bruke github linken som ble refferert til i oppgave pdf-filen.
+- Jeg har brukt samme mal, men byttet ut Student-klassen med Player-klassen og ClassRoom-klassen meg Team-klassen.
 
 - I denne oppgaven har jeg konstruert et program i C# med Team-og Player-klasser samt Player-instanser i Team-klassen.
 - Navn, alder, posisjon, rangering og id er alle lagt til i Player-klassen.
 
-  
-  
+- Jeg har også implementert CRUD endepunkter for all administrasjon av spillerne i laget.
+- I tilleg har jeg laget to tilleggsendepunkter som nevnt i opgaven.
+- Alle endepunktene er testet i Postman og bilder av at jeg tester alle endepunktene er lagt til i innleveringsmappen.
+---
+Tilslutt vil jeg bare si at årsaken til at jeg har brukt noen dager ekstra på denne oppgaven er fordi jeg var syk i store deler av forrige uke og ikke var i stand til å kunne utføre noe arbeid. Håper det går bra for denne gang.
+
+**README skrevet av YT1811**
