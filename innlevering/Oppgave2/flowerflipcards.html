@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+        h4 {
+            text-align: center;
+            color: red;
+        }
+
+        /* Container for carousel */
+        .carousel-container {
+            max-width: 800px; 
+            margin: 0 auto;
+        }
+
+        .carousel-inner img {
+            object-fit: fill; 
+            height: 400px; 
+            width: 100%;
+        }
+
+        /* Flip Card Styling */
+        .card-flip {
+            perspective: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+
+        .card-body {
+            backface-visibility: hidden;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        
+        .card-front {
+            background-color: #fff;
+            z-index: 2;
+            transform: rotateY(0deg);
+        }
+
+        
+        .card-back {
+            background-color: rgb(195, 121, 255);
+            transform: rotateY(180deg);
+            padding: 20px;
+        }
+
+        .card-flip:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+
+        .row {
+            margin-top: 50px;
+        }
+
+        h5 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flower Carousel</h1>
+    <div class="carousel-container">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://www.1800flowers.com/blog/wp-content/uploads/2017/02/close-up-of-red-rose-with-water-drops.jpg?q=70&width=3840&auto=webp" class="d-block w-100" alt="Rose">
+                    <h4>Rose</h4>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.geturns.com/cdn/shop/articles/Thumbnail_1200x.jpg?v=1708690865" class="d-block w-100" alt="Tulip">
+                    <h4>Tulip</h4>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2FCiVHulIy7GTSTf-e38-cTX6_Q2n7XXDqQ&s" class="d-block w-100" alt="Hibiscus">
+                    <h4>Hibiscus</h4>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.gardenia.net/wp-content/uploads/2024/01/shutterstock_2084235901-800x533.jpg" class="d-block w-100" alt="Sunflower">
+                    <h4>Sunflower</h4>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://scottishlavenderoils.com/cdn/shop/articles/bee-on-a-purple-lavender-in-a-purple-lavender-fiel-2022-03-05-07-18-23-utc_1200x.jpg?v=1674404702" class="d-block w-100" alt="Lavender">
+                    <h4>Lavender</h4>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="row border">
+        <h1>Flower Flip Cards</h1>
+        <div class="col">
+            <h1 class="text text-primary bg-warning"></h1>
+        </div>
+        
+        <div class="col-2">
+            <div class="card-flip">
+                <div class="card-inner">
+                    <div class="card-body card-front">
+                        <img src="https://www.1800flowers.com/blog/wp-content/uploads/2017/02/close-up-of-red-rose-with-water-drops.jpg?q=70&width=3840&auto=webp" class="card-img" alt="Rose">
+                    </div>
+                    <div class="card-body card-back">
+                        <h5>Rose</h5>
+                        <p>Did you know that roses are over 35 million years old? They’ve been around for a long time, with fossil evidence showing they existed in ancient times!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-2">
+            <div class="card-flip">
+                <div class="card-inner">
+                    <div class="card-body card-front">
+                        <img src="https://www.geturns.com/cdn/shop/articles/Thumbnail_1200x.jpg?v=1708690865" class="card-img" alt="Tulip">
+                    </div>
+                    <div class="card-body card-back">
+                        <h5>Tulip</h5>
+                        <p>Tulips were once so valuable in the 17th century that they caused a financial craze known as "Tulip Mania," where a single bulb could sell for more than the price of a house!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-2">
+            <div class="card-flip">
+                <div class="card-inner">
+                    <div class="card-body card-front">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2FCiVHulIy7GTSTf-e38-cTX6_Q2n7XXDqQ&s" class="card-img" alt="Hibiscus">
+                    </div>
+                    <div class="card-body card-back">
+                        <h5>Hibiscus</h5>
+                        <p>Hibiscus flowers are not only beautiful but also useful! In many cultures, the petals are used to make herbal teas known for their refreshing taste and potential health benefits, like lowering blood pressure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2">
+            <div class="card-flip">
+                <div class="card-inner">
+                    <div class="card-body card-front">
+                        <img src="https://www.gardenia.net/wp-content/uploads/2024/01/shutterstock_2084235901-800x533.jpg" class="card-img" alt="Sunflower">
+                    </div>
+                    <div class="card-body card-back">
+                        <h5>Sunflower</h5>
+                        <p>Sunflowers can grow incredibly fast—some varieties can grow up to 12 inches in a single day! They’re also known for their "heliotropic" behavior, meaning they turn to face the sun throughout the day.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-2">
+            <div class="card-flip">
+                <div class="card-inner">
+                    <div class="card-body card-front">
+                        <img src="https://scottishlavenderoils.com/cdn/shop/articles/bee-on-a-purple-lavender-in-a-purple-lavender-fiel-2022-03-05-07-18-23-utc_1200x.jpg?v=1674404702" class="card-img" alt="Lavender">
+                    </div>
+                    <div class="card-body card-back">
+                        <h5>Lavender</h5>
+                        <p>Lavender isn’t just pretty—it has a soothing scent that’s been used for centuries to reduce stress and anxiety, and even promote better sleep!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h1 class="text text-primary bg-warning"></h1>
+        </div>
+    </div>
+</body>
+</html>

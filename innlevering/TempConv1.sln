@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempConv1", "TempConv1\TempConv1.csproj", "{11E87422-F7A8-4676-B5AA-0DD79D0CCD8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oppgave3", "Oppgave3\Oppgave3.csproj", "{75C23A38-5090-4494-960B-C132FDF36ACD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11E87422-F7A8-4676-B5AA-0DD79D0CCD8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11E87422-F7A8-4676-B5AA-0DD79D0CCD8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11E87422-F7A8-4676-B5AA-0DD79D0CCD8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11E87422-F7A8-4676-B5AA-0DD79D0CCD8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75C23A38-5090-4494-960B-C132FDF36ACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75C23A38-5090-4494-960B-C132FDF36ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75C23A38-5090-4494-960B-C132FDF36ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75C23A38-5090-4494-960B-C132FDF36ACD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

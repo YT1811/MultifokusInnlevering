@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "yobSsUSzafX+wR+GVgkQ0CLk0Wbmf9nuHx3Uf/PC/2Q=",
+  "Source": "TempConv1",
+  "BasePath": "_content/TempConv1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TempConv1\\wwwroot",
+      "Source": "TempConv1",
+      "ContentRoot": "C:\\Users\\Instruktor.P-02465\\Desktop\\innlevering\\tempconv1\\wwwroot\\",
+      "BasePath": "_content/TempConv1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Instruktor.P-02465\\Desktop\\innlevering\\tempconv1\\wwwroot\\converter.js",
+      "SourceId": "TempConv1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Instruktor.P-02465\\Desktop\\innlevering\\tempconv1\\wwwroot\\",
+      "BasePath": "_content/TempConv1",
+      "RelativePath": "converter.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\converter.js"
+    },
+    {
+      "Identity": "C:\\Users\\Instruktor.P-02465\\Desktop\\innlevering\\tempconv1\\wwwroot\\index.html",
+      "SourceId": "TempConv1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Instruktor.P-02465\\Desktop\\innlevering\\tempconv1\\wwwroot\\",
+      "BasePath": "_content/TempConv1",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}
