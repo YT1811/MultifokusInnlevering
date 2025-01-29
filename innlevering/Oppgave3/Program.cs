@@ -188,7 +188,7 @@ app.MapGet("/findoldest", () =>
     {
         return Results.BadRequest(new { Message = "You must create a team first" });
     }
-    var oldestPlayerAge = team.players.Min(s => s.Age);
+    var oldestPlayerAge = team.players.Max(s => s.Age);
     var oldestPlayer = team.players.Where(s => s.Age == oldestPlayerAge);
     return Results.Ok(new { Message = oldestPlayer });
 
